@@ -50,14 +50,6 @@ public class Junbot extends Robot
 		fire(1);
 	}
 
-	/**
-	 * onHitByBullet: What to do when you're hit by a bullet
-	 */
-	public void onHitByBullet(HitByBulletEvent e) {
-		// Replace the next line with any behavior you would like
-		ahead(100);
-	}
-
 	public void onHitRobot(HitRobotEvent event){
 		// Replace the next line with any behavior you would like
 		turnRight(90);
@@ -74,4 +66,5 @@ public class Junbot extends Robot
 		turnRadarRight(90);
 		turnGunRight(90);
 	}
+	
 }
