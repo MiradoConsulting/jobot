@@ -11,6 +11,8 @@ public class Junbot extends Robot
 	/**
 	 * run: Junbot's default behavior
 	 */
+
+	boolean ending = false;
 	public void run() {
 		// Initialization of the robot should be put here
 
@@ -31,6 +33,11 @@ public class Junbot extends Robot
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
+			if (getNumSentries() < 3 && !ending) {
+				ending = true;
+				turnGunLeft(getGunHeading());
+				turnGunRight(getHeading());
+			}
 			ahead(100);
 		}
 	}
