@@ -38,7 +38,7 @@ public class Junbot extends Robot
 				turnGunLeft(getGunHeading());
 				turnGunRight(getHeading());
 			}
-			ahead(100);
+			ahead(500);
 		}
 	}
 
@@ -55,9 +55,7 @@ public class Junbot extends Robot
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
 		// Replace the next line with any behavior you would like
-		turnRight(90);
-		turnRadarRight(90);
-		turnGunRight(90);
+		ahead(100);
 	}
 
 	public void onHitRobot(HitRobotEvent event){
