@@ -27,6 +27,7 @@ public class Junbot extends Robot
 		turnLeft(heading);
 		double gunheading = getGunHeading();
 		turnGunLeft(gunheading);
+		turnGunLeft(180);
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
