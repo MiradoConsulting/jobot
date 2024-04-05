@@ -33,7 +33,7 @@ public class Junbot extends Robot
 		// Robot main loop
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
-			if (getNumSentries() < 3 && !ending) {
+			if (getNumSentries() < 5 && !ending) {
 				ending = true;
 				turnGunLeft(getGunHeading());
 				turnGunRight(getHeading());
